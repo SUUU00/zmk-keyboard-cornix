@@ -221,7 +221,7 @@
 &kp TAB    &kp Q         &kp W          &kp E                      &kp R        &kp T                                           &kp Y                  &kp U        &kp I                       &kp O    &kp P      &kp MINUS
 &kp LALT   &kp A         &kp S          &kp D                      &kp F        &kp G                                           &kp H                  &kp J        &kp K                       &kp L    &kp SEMI   &kp AMPERSAND
 &kp LGUI   &kp Z         &kp X          &kp C                      &kp V        &kp B                     &kp K_MUTE  &kp HOME  &kp N                  &kp M        &kp COMMA                   &kp DOT  &kp FSLH   &kp INT_YEN
-&kp LCTRL  &lt 3 ESCAPE  &kp BACKSPACE  &mt LEFT_SHIFT LANGUAGE_2  &lt 1 SPACE  &mt LEFT_SHIFT BACKSPACE                        &mt RIGHT_SHIFT ENTER  &lt 2 SPACE  &mt RIGHT_SHIFT LANGUAGE_1  &Parens  &Brackets  &to 1
+&kp LCTRL  &lt 3 ESCAPE  &kp BACKSPACE  &mt LEFT_SHIFT LANGUAGE_2  &lt 1 SPACE  &mt LEFT_SHIFT BACKSPACE                        &mt RIGHT_SHIFT ENTER  &lt 2 SPACE  &mt RIGHT_SHIFT LANGUAGE_1  &Parens  &Brackets  &lt 1 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
