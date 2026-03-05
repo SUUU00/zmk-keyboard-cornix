@@ -16,11 +16,7 @@ include:
   - board: cornix_left
     # shield: cornix_indicator
     artifact-name: cornix_left_default_nosd
-
-  - board: cornix_ph_left
-    # shield: cornix_indicator
-    artifact-name: cornix_left_for_dongle_nosd
-
+    
   - board: cornix_right
     # shield: cornix_indicator
     artifact-name: cornix_right_nosd
