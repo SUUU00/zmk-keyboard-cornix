@@ -144,6 +144,15 @@
         };
     };
 
+    macros {
+        PASSS: PASSS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_5 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp ENTER>;
+            label = "PASSS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
