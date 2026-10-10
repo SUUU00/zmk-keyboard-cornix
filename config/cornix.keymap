@@ -177,11 +177,17 @@
         };
 
         Arrow_layer {
+            // Recovery keys on the left (central) half, usable while the right half is offline.
+            // Hold the Arrow thumb key, then press a left palm key on the bottom row:
+            //   2nd from the left edge -> &sys_reset  : reboot the left half and search for the right half again
+            //   3rd from the left edge -> &bt BT_CLR  : forget the host pairing of the current Bluetooth profile
+            // The corner key stays transparent so Ctrl + arrows keeps working.
+
             bindings = <
-&trans  &trans  &trans    &kp UP    &trans     &trans                  &trans  &trans        &trans      &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                  &trans  &bt BT_SEL 0  &bt BT_CLR  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans        &trans      &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans                  &trans  &trans        &trans      &trans  &trans  &trans
+&trans  &trans      &trans      &kp UP    &trans     &trans                  &trans  &trans        &trans      &trans  &trans  &trans
+&trans  &trans      &kp LEFT    &kp DOWN  &kp RIGHT  &trans                  &trans  &bt BT_SEL 0  &bt BT_CLR  &trans  &trans  &trans
+&trans  &trans      &trans      &trans    &trans     &trans  &trans  &trans  &trans  &trans        &trans      &trans  &trans  &trans
+&trans  &sys_reset  &bt BT_CLR  &trans    &trans     &trans                  &trans  &trans        &trans      &trans  &trans  &trans
             >;
 
             label = "Arrow";
