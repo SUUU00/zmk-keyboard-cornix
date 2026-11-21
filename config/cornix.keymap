@@ -290,14 +290,16 @@
             // Hold the Arrow thumb key, then press a left palm key on the bottom row:
             //   2nd from the left edge -> &sys_reset  : reboot the left half and search for the right half again
             //   3rd from the left edge -> &bt BT_CLR  : forget the host pairing of the current Bluetooth profile
-            // Right hand: I / J / K / L = move window up / left / down / right
-            //   Mac: Ctrl+Option+arrow (Magnet default)   Windows: Win+arrow (Win arrow layer)
+            // Right hand window keys, same result on both hosts:
+            //   I = maximize   J = left half   K = restore   L = right half
+            //   Mac (Magnet): Ctrl+Option + Return / Left / Delete / Right
+            //   Windows (Win arrow layer): Win + Up / Left / Down / Right
             // Bluetooth: M = profile 1 (Mac), , = profile 2 (Windows, switches to the Win layer), . = clear.
             // The corner key stays transparent so Ctrl + arrows keeps working.
 
             bindings = <
-&trans  &trans      &trans      &kp UP    &trans     &trans                  &trans  &trans               &kp LC(LA(UP))    &trans                &trans  &trans
-&trans  &trans      &kp LEFT    &kp DOWN  &kp RIGHT  &trans                  &trans  &kp LC(LA(LEFT))     &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))     &trans  &trans
+&trans  &trans      &trans      &kp UP    &trans     &trans                  &trans  &trans               &kp LC(LA(RET))   &trans                &trans  &trans
+&trans  &trans      &kp LEFT    &kp DOWN  &kp RIGHT  &trans                  &trans  &kp LC(LA(LEFT))     &kp LC(LA(BSPC))  &kp LC(LA(RIGHT))     &trans  &trans
 &trans  &trans      &trans      &trans    &trans     &trans  &trans  &trans  &trans  &bt BT_SEL 0         &bt BT_SEL 1      &bt BT_CLR            &trans  &trans
 &trans  &sys_reset  &bt BT_CLR  &trans    &trans     &trans                  &trans  &trans        &trans      &trans  &trans  &trans
             >;
