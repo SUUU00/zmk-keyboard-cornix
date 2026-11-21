@@ -140,7 +140,6 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp LS(INT1)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win -  _";
         };
 
         w_semi: w_semi {
@@ -148,15 +147,14 @@
             #binding-cells = <0>;
             bindings = <&kp SEMI>, <&kp APOS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win ;  :";
         };
 
+        // quote: ' / double quote
         w_apos: w_apos {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(N7)>, <&kp LS(N2)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win '  "";
         };
 
         w_n2: w_n2 {
@@ -164,7 +162,6 @@
             #binding-cells = <0>;
             bindings = <&kp N2>, <&kp LBKT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win 2  @";
         };
 
         w_n6: w_n6 {
@@ -172,7 +169,6 @@
             #binding-cells = <0>;
             bindings = <&kp N6>, <&kp EQUAL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win 6  ^";
         };
 
         w_n7: w_n7 {
@@ -180,7 +176,6 @@
             #binding-cells = <0>;
             bindings = <&kp N7>, <&kp LS(N6)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win 7  &";
         };
 
         w_n8: w_n8 {
@@ -188,7 +183,6 @@
             #binding-cells = <0>;
             bindings = <&kp N8>, <&kp LS(APOS)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win 8  *";
         };
 
         w_n9: w_n9 {
@@ -196,7 +190,6 @@
             #binding-cells = <0>;
             bindings = <&kp N9>, <&kp LS(N8)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win 9  (";
         };
 
         w_n0: w_n0 {
@@ -204,7 +197,6 @@
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp LS(N9)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win 0  )";
         };
 
         w_equal: w_equal {
@@ -212,7 +204,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(MINUS)>, <&kp LS(SEMI)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            display-name = "Win =  +";
         };
     };
 
