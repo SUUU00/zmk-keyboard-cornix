@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT
+
+config CORNIX_PROFILE_LAYER
+    bool "Turn a keymap layer on while a given BLE profile is selected"
+    default y
+    depends on ZMK_BLE && (!ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL)
+    help
+      Used to switch the Cornix keymap to its Windows layer when the
+      Windows Bluetooth profile is selected, and back for the Mac profile.
+
+if CORNIX_PROFILE_LAYER
+
+config CORNIX_PROFILE_LAYER_PROFILE
+    int "BLE profile index (0-based) that turns the layer on"
+    default 1
+
+config CORNIX_PROFILE_LAYER_LAYER
+    int "Keymap layer index to turn on for that profile"
+    default 1
+
+endif
